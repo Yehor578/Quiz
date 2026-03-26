@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій Сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ласкаво просимо!</h1>
+            <p>Це базовий сайт</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Лічильник</h2>
+                <div class="counter-display" id="counter">0</div>
+                <div class="button-group">
+                    <button class="btn btn-minus" onclick="decrementCounter()">-</button>
+                    <button class="btn btn-reset" onclick="resetCounter()">Скинути</button>
+                    <button class="btn btn-plus" onclick="incrementCounter()">+</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Привіт</h2>
+                <input type="text" id="nameInput" placeholder="Введіть ім'я...">
+                <button class="btn btn-primary" onclick="sayHello()">Привіт</button>
+                <p id="greeting"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Мій Сайт. Всі права захищені.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
